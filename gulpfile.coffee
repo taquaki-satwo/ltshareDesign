@@ -18,6 +18,7 @@ jade           = require 'gulp-jade'
 less           = require 'gulp-less'
 plumber        = require 'gulp-plumber'
 scss           = require 'gulp-sass'
+source         = require 'vinyl-source-stream'
 webserver      = require 'gulp-webserver'
 
 
@@ -65,7 +66,7 @@ gulp.task 'build:css', ->
 # js
 gulp.task 'build:js', ->
   browserify
-    entries: ['./src/js/main.jsx', './src/js/main.js']
+    entries: ['./src/js/main.js']
     transform: ['babelify', 'debowerify']
   .bundle()
   .pipe source 'bundle.js'
