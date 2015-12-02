@@ -46,7 +46,7 @@ gulp.task 'build:watch', ->
 
 # html
 gulp.task 'build:jade', ->
-  gulp.src sources.jade
+  gulp.src ['./src/jade/**/*.jade', '!./src/jade/**/_*.jade']
       .pipe plumber()
       .pipe jade { pretty: true }
       .pipe gulp.dest sources.dist
