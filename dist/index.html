@@ -4,23 +4,166 @@
     <mata charset="utf-8"></mata>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Bootstrap 101 Template</title>
+    <title>LTShare</title>
     <link href="lib/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <!-- [if lt IE 9]-->
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <!-- [endif]-->
   </head>
   <body>
+    <!-- Nav bar-->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#globalmenu" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <h1><a href="#" class="text-hide navbar-brand">LTShare</a></h1>
+        </div>
+        <div id="globalmenu" class="collapse navbar-collapse">
+          <form role="search" class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" placeholder="ライトニングトークを検索" class="form-control"/>
+            </div>
+            <button type="submit" class="btn">検索</button>
+          </form>
+          <p class="navbar-text"><a href="#" class="navbar-link">Tags</a></p>
+          <p class="navbar-text"><a href="#" class="navbar-link">Upload</a></p>
+          <p class="navbar-text navbar-right"><a href="#" class="navbar-link">Log Out</a></p>
+          <p class="navbar-text navbar-right"><a href="#" class="navbar-link">Log In</a></p>
+          <p class="navbar-text navbar-right"><a href="#" class="navbar-link">Sign Up</a></p>
+        </div>
+      </div>
+    </nav>
+    <!-- Popular LT-->
     <div class="container-fluid">
-      <h1>Hello, world!</h1>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-2"></div>
+      <div class="container">
+        <!-- Page Header-->
+        <div class="page-header">
+          <h2>人気のライトニングトーク</h2>
+        </div>
+        <div class="row">
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="thumbnail"><img src="https://i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg"/></div>
+                <h1>photoruction<span class="label pull-right">+スライド</span></h1><small>Global GEEK Audition</small>
+                <ul class="list-inline">
+                  <li>10 VIEWS</li>
+                  <li>10 LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <ul class="list-inline">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>Ruby</li>
+                  <li>Webサービス</li>
+                  <li>ジーズアカデミー</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="lib/jquery.min.js"></script>
-    <script src="lib/bootstrap.min.js"></script></body>
-  </body></html>
+    <!-- Latest LT-->
+    <div class="container-fluid">
+      <div class="container">
+        <!-- Page Header-->
+        <div class="page-header">
+          <h2>最新のライトニングトーク</h2>
+        </div>
+        <div class="row">
+          <!-- panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body">
+                <div class="thumbnail"><img src="https://i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg"/></div>
+                <h1>photoruction<span class="label pull-right">+スライド</span></h1><small>Global GEEK Audition</small>
+                <ul class="list-inline">
+                  <li>10 VIEWS</li>
+                  <li>10 LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <ul class="list-inline">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>Ruby</li>
+                  <li>Webサービス</li>
+                  <li>ジーズアカデミー</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination-->
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="text-center">
+          <ul class="pagination">
+            <li class="disabled"><a href="#" aria-label="前のページへ"><span aria-hidden="true">&lt;</span></a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" aria-label="次のページへ"><span aria-hidden="true"> &gt;</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Tags-->
+    <div class="container-fluid">
+      <div class="container">
+        <h2>tags</h2>
+        <ul class="list-inline">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Ruby</li>
+          <li>Webサービス</li>
+          <li>ジーズアカデミー</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Ruby</li>
+          <li>Webサービス</li>
+          <li>ジーズアカデミー</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Ruby</li>
+          <li>Webサービス</li>
+          <li>ジーズアカデミー</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Ruby</li>
+          <li>Webサービス</li>
+          <li>ジーズアカデミー</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer-->
+    <div class="container-fluid">
+      <div class="container">
+        <address class="text-center"><span class="text-hide">LTShare</span>Created by<strong>Ryo Isomura</strong><a href="#">mail</a><a href="#">Twitter</a><a href="#">Facebook</a><a href="#">GitHub</a><small>©2015 LTShare</small></address>
+      </div>
+      <script src="lib/jquery.min.js"></script>
+      <script src="lib/bootstrap.min.js"></script>
+    </div>
+  </body>
 </html>

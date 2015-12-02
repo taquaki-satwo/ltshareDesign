@@ -1,27 +1,228 @@
 <!DOCTYPE html>
 html(lang="ja")
+
   head
+
     mata(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    
-    title Bootstrap 101 Template
-    
+
+    title LTShare
+
     link(href="lib/bootstrap.min.css", rel="stylesheet")
+    link(href="css/style.css", rel="stylesheet")
+
     // [if lt IE 9]
     script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
     script( src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
     // [endif]
-  body
-    
-    .container-fluid
-    
-      h1 Hello, world!
-      
-    .container-fluid
-      .row    
 
-    script(src="lib/jquery.min.js")
-    script(src="lib/bootstrap.min.js")
-    </body>
-  </html>
+  body
+
+
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // Nav bar
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    nav.navbar.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#globalmenu")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          h1
+            a.text-hide.navbar-brand(href="#") LTShare
+
+        #globalmenu.collapse.navbar-collapse
+
+          form.navbar-form.navbar-left(role="search")
+            .form-group
+              input.form-control(type="text", placeholder="ライトニングトークを検索")
+            button.btn(type="submit") 検索
+
+          p.navbar-text
+            a.navbar-link(href="#") Tags
+
+          p.navbar-text
+            a.navbar-link(href="#") Upload
+
+          p.navbar-text.navbar-right
+            a.navbar-link(href="#") Log Out
+
+          p.navbar-text.navbar-right
+            a.navbar-link(href="#") Log In
+
+          p.navbar-text.navbar-right
+            a.navbar-link(href="#") Sign Up
+
+
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // Popular LT
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    .container-fluid
+      
+      .container
+      
+        // Page Header
+        .page-header
+          h2 人気のライトニングトーク
+
+        .row
+
+          // Panel
+          .col-xs-12.col-sm-6.col-md-4.col-lg-3
+            .panel
+              .panel-body
+                .thumbnail
+                  img(src="https://i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg")
+                
+                h1 photoruction
+                  span.label.pull-right +スライド
+                
+                small Global GEEK Audition
+                
+                ul.list-inline
+                  li 10 VIEWS
+                  li 10 LIKES
+                
+              .panel-footer
+                ul.list-inline
+                  li HTML
+                  li CSS
+                  li JavaScript
+                  li PHP
+                  li Ruby
+                  li Webサービス
+                  li ジーズアカデミー
+
+
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // Latest LT
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    .container-fluid
+      
+      .container
+      
+        // Page Header
+        .page-header
+          h2 最新のライトニングトーク
+
+        .row
+
+          // panel
+          .col-xs-12.col-sm-6.col-md-4.col-lg-3
+            .panel
+              .panel-body
+                .thumbnail
+                  img(src="https://i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg")
+                
+                h1 photoruction
+                  span.label.pull-right +スライド
+                
+                small Global GEEK Audition
+                
+                ul.list-inline
+                  li 10 VIEWS
+                  li 10 LIKES
+                
+              .panel-footer
+                ul.list-inline
+                  li HTML
+                  li CSS
+                  li JavaScript
+                  li PHP
+                  li Ruby
+                  li Webサービス
+                  li ジーズアカデミー
+
+
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // Pagination
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    .container-fluid
+      
+      .container
+
+        nav.text-center
+
+          ul.pagination
+            li.disabled
+              a(href="#" aria-label="前のページへ")
+                span(aria-hidden="true") &lt;
+            li.active
+              a(href="#") 1
+            li
+              a(href="#") 2
+            li
+              a(href="#") 3
+            li
+              a(href="#") 4
+            li
+              a(href="#") 5
+            li
+              a(href="#" aria-label="次のページへ")
+                span(aria-hidden="true")  &gt;
+
+
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // Tags
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    .container-fluid
+      
+      .container
+      
+        h2 tags
+        
+        ul.list-inline
+          li HTML
+          li CSS
+          li JavaScript
+          li PHP
+          li Ruby
+          li Webサービス
+          li ジーズアカデミー
+          li HTML
+          li CSS
+          li JavaScript
+          li PHP
+          li Ruby
+          li Webサービス
+          li ジーズアカデミー
+          li HTML
+          li CSS
+          li JavaScript
+          li PHP
+          li Ruby
+          li Webサービス
+          li ジーズアカデミー
+          li HTML
+          li CSS
+          li JavaScript
+          li PHP
+          li Ruby
+          li Webサービス
+          li ジーズアカデミー
+
+
+        
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // Footer
+    //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    .container-fluid
+      
+      .container
+
+        address.text-center
+          span.text-hide LTShare
+          | Created by
+          strong Ryo Isomura
+          a(href="#") mail
+          a(href="#") Twitter
+          a(href="#") Facebook
+          a(href="#") GitHub
+          small ©2015 LTShare
+
+
+      script(src="lib/jquery.min.js")
+      script(src="lib/bootstrap.min.js")
