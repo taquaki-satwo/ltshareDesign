@@ -1,0 +1,67 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Variable
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//-
+// Color
+//- ------------------------------------------------------
+$yellow50: #FFFDE7;
+$yellow100: #FFF9C4;
+$yellow200: #FFF59D;
+$yellow300: #FFF176;
+$yellow400: #FFEE58;
+$yellow500: #FFEB3B;
+$yellow600: #FDD835;
+$yellow700: #FBC02D;
+$yellow800: #F9A825;
+$yellow900: #F57F17;
+
+$gray50: #FAFAFA;
+$gray100: #F5F5F5;
+$gray200: #EEEEEE;
+$gray300: #E0E0E0;
+$gray400: #BDBDBD;
+$gray500: #9E9E9E;
+$gray600: #757575;
+$gray700: #616161;
+$gray800: #424242;
+$gray900: #212121;
+
+$blue50: #E3F2FD;
+$blue100: #BBDEFB;
+$blue200: #90CAF9;
+$blue300: #64B5F6;
+$blue400: #42A5F5;
+$blue500: #2196F3;
+$blue600: #1E88E5;
+$blue700: #1976D2;
+$blue800: #1565C0;
+$blue900: #0D47A1;
+
+// Thema color
+$key_color: $yellow500;
+$sub_color: $yellow600;
+
+// Background color
+$base_bg_color: $gray50;
+$sub_bg_color: $gray300;
+$accent_bg_color: $gray900;
+
+// Font color
+$base_font_color: $gray800;
+$sub_font_color: $gray700;
+$accent_font_clor: $gray500;
+
+
+//-
+// Size
+//- ------------------------------------------------------
+
+// Font size
+$base_font_size: 10px;
+$heading_font_size: $base_font_size * 1.4;
+
+// Screen size
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
