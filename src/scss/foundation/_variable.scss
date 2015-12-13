@@ -58,7 +58,8 @@ $accent_font_clor: $gray500;
 //- ------------------------------------------------------
 
 // Font size
-$base_font_size: 10px;
+$root_font_size: 62.5%;
+$base_font_size: 1rem;
 $heading_font_size: $base_font_size * 1.4;
 
 // Screen size

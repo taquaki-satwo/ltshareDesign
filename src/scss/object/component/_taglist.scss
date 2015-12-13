@@ -2,8 +2,8 @@
 // Tag list
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .taglist {
-  line-height: 2em;
-  margin: -.5em 0;
+  line-height: 2rem;
+  margin: -.5rem 0;
 
   li {
     padding: 0;
@@ -29,7 +29,7 @@
 
 .taglist-tags {
   @extend .taglist;
-  letter-spacing: -.5em;
+  letter-spacing: -.5rem;
 
   li {
     letter-spacing: normal;
@@ -70,6 +70,14 @@
     li {
       width: 16.666%;
 
+      a {
+        font-size: $base_font_size * 1.2;
+      }
+    }
+  }
+
+  .taglist-view {
+    li {
       a {
         font-size: $base_font_size * 1.2;
       }
