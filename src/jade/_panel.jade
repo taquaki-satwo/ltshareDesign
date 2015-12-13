@@ -5,7 +5,7 @@
   .panel
     .panel-body
       .thumbnail
-        img(src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg")
+        img.img-responsive(src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg")
 
       h1 photoruction
         span.label.pull-right
@@ -14,20 +14,8 @@
 
       small Global GEEK Audition
 
-      ul.list-inline
-        li
-          i.fa.fa-eye(aria-hidden="true")
-          | 10 VIEWS
-        li
-          i.fa.fa-star(aria-hidden="true")
-          | 10 LIKES
+      include ./_state
 
     .panel-footer
-      ul.list-inline
-        li HTML
-        li CSS
-        li JavaScript
-        li PHP
-        li Ruby
-        li Webサービス
-        li ジーズアカデミー
+
+      include ./_tagslist
