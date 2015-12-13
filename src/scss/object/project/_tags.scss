@@ -1,14 +1,12 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 // Tags
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-.container-fluid.tags
+.tags {
+  background: $sub_bg_color;
+  padding-top: 3em;
+  padding-bottom: 3em;
 
-  .container
-  
-    .row
-
-      h2.heading
-        i.fa.fa-tags(aria-hidden="true")
-        | Tags
-
-      include ./_taglist-tags
+  h2 {
+    margin-bottom: 1.25em;
+  }
+}
