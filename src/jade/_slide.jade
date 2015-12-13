@@ -12,11 +12,11 @@
         .col-xs-12.col-sm-12.col-md-6.col-lg-6
 
           .embed-responsive.embed-responsive-16by9
-            iframe.embed-responsive-item(src="https://www.youtube.com/embed/Snh9uJUhSEk", frameborder="0", allowfullscreen)
+            iframe.embed-responsive-item(src="//www.youtube.com/embed/Snh9uJUhSEk", frameborder="0", allowfullscreen)
 
         .col-xs-12.col-sm-12.col-md-6.col-lg-6
 
-          .embed-responsive.embed-responsive-16by9  
+          .embed-responsive.embed-responsive-16by9
             iframe.embed-responsive-item(src="//www.slideshare.net/slideshow/embed_code/key/IptYc6f60IG3wn", frameborder="0", allowfullscreen)
 
 
@@ -24,9 +24,7 @@
 
         .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
 
-          h1 photoruction
-
-          small Global GEEK Audition
+          include ./_title
 
           include ./_state
 
@@ -38,4 +36,4 @@
               i.fa.fa-share(aria-hidden="true")
               | Share
 
-          include ./_tagslist
+          include ./_taglist-view
