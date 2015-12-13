@@ -1,0 +1,25 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Panel
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.panel {
+  border: none;
+  background: white;
+  margin-bottom: 3rem;
+
+  &-body {
+    padding: 0;
+    position: relative;
+  }
+
+  .thumbnail {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .label {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+  }
+}
