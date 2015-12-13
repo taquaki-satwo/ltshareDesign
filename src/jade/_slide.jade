@@ -2,38 +2,41 @@
 // Slide
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .container-fluid
-
-  .container-fluid
-
-    .container
-
+  
+  .row
+  
+    .container-fluid
+    
       .row
 
-        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+        .container
 
-          .embed-responsive.embed-responsive-16by9
-            iframe.embed-responsive-item(src="//www.youtube.com/embed/Snh9uJUhSEk", frameborder="0", allowfullscreen)
+          .row
 
-        .col-xs-12.col-sm-12.col-md-6.col-lg-6
+            .col-xs-12.col-sm-12.col-md-6.col-lg-6
 
-          .embed-responsive.embed-responsive-16by9
-            iframe.embed-responsive-item(src="//www.slideshare.net/slideshow/embed_code/key/IptYc6f60IG3wn", frameborder="0", allowfullscreen)
+              .embed-responsive.embed-responsive-16by9
+                iframe.embed-responsive-item(src="//www.youtube.com/embed/Snh9uJUhSEk", frameborder="0", allowfullscreen)
 
+            .col-xs-12.col-sm-12.col-md-6.col-lg-6
 
-      .row
+              .embed-responsive.embed-responsive-16by9
+                iframe.embed-responsive-item(src="//www.slideshare.net/slideshow/embed_code/key/IptYc6f60IG3wn", frameborder="0", allowfullscreen)
 
-        .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+          .row
 
-          include ./_title
+            .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
 
-          include ./_state
+              include ./_title-view
 
-          .btn-group(role="group")
-            button.btn(type="button")
-              i.fa.fa-star(aria-hidden="true")
-              | Like
-            button.btn(type="button")
-              i.fa.fa-share(aria-hidden="true")
-              | Share
+              include ./_state
 
-          include ./_taglist-view
+              .btn-group(role="group")
+                button.btn(type="button")
+                  i.fa.fa-star(aria-hidden="true")
+                  | Like
+                button.btn(type="button")
+                  i.fa.fa-share(aria-hidden="true")
+                  | Share
+
+              include ./_taglist-view

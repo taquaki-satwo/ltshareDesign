@@ -2,32 +2,36 @@
 // Video
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .container-fluid
-
-  .container-fluid
-
-    .container
-
+  
+  .row
+  
+    .container-fluid
+      
       .row
 
-        .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+        .container
 
-          .embed-responsive.embed-responsive-16by9
-            iframe.embed-responsive-item(src="//www.youtube.com/embed/Snh9uJUhSEk", frameborder="0", allowfullscreen)
+          .row
 
-      .row
+            .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
 
-        .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+              .embed-responsive.embed-responsive-16by9
+                iframe.embed-responsive-item(src="//www.youtube.com/embed/Snh9uJUhSEk", frameborder="0", allowfullscreen)
 
-          include ./_title
+          .row
 
-          include ./_state
+            .col-xs-12.col-sm-12.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
 
-          .btn-group(role="group")
-            button.btn(type="button")
-              i.fa.fa-star(aria-hidden="true")
-              | Like
-            button.btn(type="button")
-              i.fa.fa-share(aria-hidden="true")
-              | Share
+              include ./_title-view
 
-          include ./_taglist-view
+              include ./_state
+
+              .btn-group(role="group")
+                button.btn(type="button")
+                  i.fa.fa-star(aria-hidden="true")
+                  | Like
+                button.btn(type="button")
+                  i.fa.fa-share(aria-hidden="true")
+                  | Share
+
+              include ./_taglist-view
