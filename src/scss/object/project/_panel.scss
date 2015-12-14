@@ -2,6 +2,7 @@
 // Panel
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .panel {
+  @include shadow-m(out);
   border: none;
   background: white;
   margin-bottom: 3rem;
@@ -21,5 +22,12 @@
     position: absolute;
     top: .5rem;
     right: .5rem;
+  }
+
+  &-footer {
+    padding: 2rem;
+    background: white;
+    border: none;
+    border-radius: 0;
   }
 }
