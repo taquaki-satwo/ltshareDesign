@@ -24,8 +24,12 @@
 
 .title-panel {
   @extend .title;
+
+  small {
+    color: $accent_font_color;
+  }
 }
 
 .title-view {
-  // @extend .title;
+  @extend .title;
 }

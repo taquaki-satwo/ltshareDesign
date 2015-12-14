@@ -7,7 +7,7 @@
 
   li {
     padding: 0;
-    color: $blue800;
+    color: $blue900;
 
     &:after {
       content: " / ";
@@ -29,10 +29,9 @@
 
 .taglist-tags {
   @extend .taglist;
-  letter-spacing: -.5rem;
+  @include inlineblock;
 
   li {
-    letter-spacing: normal;
     width: 50%;
 
     &:after {
@@ -49,7 +48,7 @@
   @extend .taglist;
 
   li {
-    color: $accent_font_clor;
+    color: $accent_font_color;
 
     a {
       font-size: $base_font_size * 1.4;
