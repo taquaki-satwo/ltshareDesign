@@ -59,7 +59,7 @@ gulp.task 'build:css', ->
       .pipe scss()
       .pipe autoprefixer()
       .pipe concat 'style.css'
-      # .pipe cssmin()
+      .pipe cssmin()
       .pipe gulp.dest sources.dist + 'css/'
 
 

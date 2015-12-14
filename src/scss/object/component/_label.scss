@@ -1,0 +1,14 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Label
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.label {
+  background: $accent_bg_color;
+  color: $key_color;
+  border-radius: 0;
+  padding: .5rem;
+  font-weight: normal;
+
+  i {
+    color: inherit;
+  }
+}

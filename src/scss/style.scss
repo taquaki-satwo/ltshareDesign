@@ -1,1 +1,80 @@
-body { padding-top: 70px; }
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Foundation
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+@import "./foundation/_variable";
+
+// @import "foundation/_mixin";
+@mixin ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// @import "foundation/_reset";
+* {
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: $base_font_color;
+}
+
+// @import "foundation/_base";
+html {
+  background: $base_bg_color;
+  font-size: $root_font_size;
+}
+body {
+  font-size: $base_font_size;
+  line-height: 1em;
+  padding-top: 70px;
+}
+.img-responsive {
+  width: 100%;
+}
+
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Layout
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+@import "./layout/_footer";
+// @import "layout/_header";
+// @import "layout/_main";
+// @import "layout/_sidebar";
+
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Object
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//-
+// Component
+//- ------------------------------------------------------
+
+@import "./object/component/_taglist";
+@import "./object/component/_pageheader";
+@import "./object/component/_title";
+@import "./object/component/_label";
+
+.heading {
+  margin: 0;
+  font-size: $heading_font_size;
+  line-height: 1em;
+}
+
+//-
+// Project
+//- ------------------------------------------------------
+
+@import "./object/project/_tags";
+@import "./object/project/_panel";
+
+
+//-
+// Utility
+//- ------------------------------------------------------
+
+// @import "object/utility/_align";
+// @import "object/utility/_clearfix";
+// @import "object/utility/_margin";
+// @import "object/utility/_position";
+// @import "object/utility/_size";
+// @import "object/utility/_text";

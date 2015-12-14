@@ -1,0 +1,38 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Footer
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.footer {
+  background: $accent_bg_color;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  address {
+    margin: -.25rem 0;
+    font-size: $base_font_size * 1.4;
+    line-height: 1.5rem;
+    color: white;
+
+    & > * {
+      padding: 0 .25rem;
+    }
+
+    strong {
+      font-size: inherit;
+      color: inherit;
+    }
+
+    a {
+      font-size: inherit;
+      color: inherit;
+
+      i {
+        color: inherit;
+      }
+    }
+
+    small {
+      font-size: $base_font_size * 1.2;
+      color: inherit;
+    }
+  }
+}

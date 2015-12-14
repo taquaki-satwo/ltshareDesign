@@ -1,0 +1,86 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Tag list
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.taglist {
+  line-height: 2rem;
+  margin: -.5rem 0;
+
+  li {
+    padding: 0;
+    color: $blue800;
+
+    &:after {
+      content: " / ";
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+.taglist-panel {
+  @extend .taglist;
+
+  a {
+    font-size: $base_font_size * 1.2;
+  }
+}
+
+.taglist-tags {
+  @extend .taglist;
+  letter-spacing: -.5rem;
+
+  li {
+    letter-spacing: normal;
+    width: 50%;
+
+    &:after {
+      content: none;
+    }
+
+    a {
+      font-size: $base_font_size * 1.4;
+    }
+  }
+}
+
+.taglist-view {
+  @extend .taglist;
+
+  li {
+    color: $accent_font_clor;
+
+    a {
+      font-size: $base_font_size * 1.4;
+    }
+  }
+}
+
+@media (min-width: $sm) {
+  .taglist-panel {
+    li {
+      a {
+        font-size: $base_font_size;
+      }
+    }
+  }
+
+  .taglist-tags {
+    li {
+      width: 16.666%;
+
+      a {
+        font-size: $base_font_size * 1.2;
+      }
+    }
+  }
+
+  .taglist-view {
+    li {
+      a {
+        font-size: $base_font_size * 1.2;
+      }
+    }
+  }
+}

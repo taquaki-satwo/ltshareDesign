@@ -1,12 +1,14 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 // Tags
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-.container-fluid
+.container-fluid.tags
 
   .container
+  
+    .row
 
-    h2
-      i.fa.fa-tags(aria-hidden="true")
-      | tags
+      h2.heading
+        i.fa.fa-tags(aria-hidden="true")
+        | Tags
 
-    include ./_tagslist
+      include ./_taglist-tags
