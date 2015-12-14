@@ -12,20 +12,37 @@
   text-overflow: ellipsis;
 }
 
-// @import "foundation/_reset";
-* {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  color: $base_font_color;
+@mixin inlineblock {
+  letter-spacing: -.5em;
+
+  > * {
+    letter-spacing: normal;
+  }
 }
+
+@mixin shadow-m($inset) {
+  @if $inset == 'in' {
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
+  }
+  @else {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+}
+
+
+
+// @import "foundation/_reset";
 
 // @import "foundation/_base";
 html {
-  background: $base_bg_color;
   font-size: $root_font_size;
 }
 body {
+  background: $base_bg_color;
   font-size: $base_font_size;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   line-height: 1em;
+  color: $base_font_color;
   padding-top: 70px;
 }
 .img-responsive {
@@ -53,6 +70,7 @@ body {
 @import "./object/component/_pageheader";
 @import "./object/component/_title";
 @import "./object/component/_label";
+@import "./object/component/_state";
 
 .heading {
   margin: 0;
