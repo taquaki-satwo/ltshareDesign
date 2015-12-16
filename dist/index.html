@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <mata charset="utf-8"></mata>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LTShare</title>
@@ -15,151 +15,148 @@
     <!-- [endif]-->
   </head>
   <body>
-    <!-- Nav bar-->
+    <!-- Navbar-->
     <nav class="navbar navbar-fixed-top">
       <div class="container">
+        <!-- Navbar Header-->
         <div class="navbar-header">
+          <!-- Navbar toggle-->
           <button type="button" data-toggle="collapse" data-target="#globalmenu" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          <h1><a href="/" class="text-hide navbar-brand">LTShare</a></h1>
+          <h1><a href="/" class="text-hide navbar-brand">LTShare<img src="/img/logo_l.png" class="img-responsive"></a></h1>
         </div>
+        <!-- Navbar collapse-->
         <div id="globalmenu" class="collapse navbar-collapse">
-          <form role="search" class="navbar-form navbar-left">
+          <!-- Navbar form-->
+          <form role="search" class="navbar-form">
             <div class="form-group">
               <input type="text" placeholder="ライトニングトークを検索" class="form-control">
+              <button type="submit" class="btn"><span class="sr-only">検索</span><i aria-hidden="true" class="fa fa-search"></i></button>
             </div>
-            <button type="submit" class="btn"><span class="sr-only">検索</span><i aria-hidden="true" class="fa fa-search"></i></button>
           </form>
-          <p class="navbar-text"><a href="#" class="navbar-link"><i aria-hidden="true" class="fa fa-tags"></i>Tags</a></p>
-          <p class="navbar-text"><a href="#" class="navbar-link"><i aria-hidden="true" class="fa fa-upload"></i>Upload</a></p>
-          <p class="navbar-text navbar-right"><a href="#" class="navbar-link">Log Out</a></p>
-          <p class="navbar-text navbar-right"><a href="#" class="navbar-link">Log In</a></p>
-          <p class="navbar-text navbar-right"><a href="#" class="navbar-link">Sign Up</a></p>
         </div>
       </div>
     </nav>
     <!-- Popular LT-->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="container">
-          <!-- Page Header-->
-          <div class="page-header">
-            <h2 class="heading">人気のライトニングトーク</h2>
+    <div class="container-fluid panels-popular">
+      <div class="container">
+        <!-- Page Header-->
+        <div class="page-header">
+          <h2 class="heading">人気のライトニングトーク</h2>
+        </div>
+        <div class="row">
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
+                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
               </div>
-            </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
-                </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -167,244 +164,242 @@
       </div>
     </div>
     <!-- Latest LT-->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="container">
-          <!-- Page Header-->
-          <div class="page-header">
-            <h2 class="heading">最新のライトニングトーク</h2>
+    <div class="container-fluid panels">
+      <div class="container">
+        <!-- Page Header-->
+        <div class="page-header">
+          <h2 class="heading">最新のライトニングトーク</h2>
+        </div>
+        <div class="row">
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
+                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
+              </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
+          </div>
+          <!-- Panel-->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel">
+              <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
+                <!-- Title in Panel-->
+                <div class="title-panel">
+                  <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
                 </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+                <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
+                <!-- State in Panel-->
+                <ul class="list-inline state-panel">
+                  <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
+                  <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
+                </ul>
               </div>
-            </div>
-            <!-- Panel-->
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="panel">
-                <div class="panel-body"><a href="#" class="thumbnail"><img src="//i.ytimg.com/vi/Snh9uJUhSEk/mqdefault.jpg" class="img-responsive"></a>
-                  <!-- Title in Panel-->
-                  <div class="title-panel">
-                    <h1><a href="#">photoruction</a></h1><small>Global GEEK Audition</small>
-                  </div>
-                  <!-- Label--><span class="label"><i aria-hidden="true" class="fa fa-plus"></i>スライド</span>
-                  <!-- State in Panel-->
-                  <ul class="list-inline state-panel">
-                    <li><i aria-hidden="true" class="fa fa-eye"></i><strong>10</strong>VIEWS</li>
-                    <li><i aria-hidden="true" class="fa fa-star"></i><strong>10</strong>LIKES</li>
-                  </ul>
-                </div>
-                <div class="panel-footer">
-                  <!-- Tag List in Panel-->
-                  <ul class="list-inline taglist-panel">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">PHP</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Webサービス</a></li>
-                    <li><a href="#">ジーズアカデミー</a></li>
-                  </ul>
-                </div>
+              <div class="panel-footer">
+                <!-- Tag List in Panel-->
+                <ul class="list-inline taglist-panel">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">PHP</a></li>
+                  <li><a href="#">Ruby</a></li>
+                  <li><a href="#">Webサービス</a></li>
+                  <li><a href="#">ジーズアカデミー</a></li>
+                </ul>
               </div>
             </div>
           </div>

@@ -1,0 +1,47 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Pagination
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.pagination {
+  margin: 0 0 6rem;;
+  border-radius: 0;
+
+  li {
+
+    &:first-child,
+    &:last-child {
+      a {
+        border-radius: 0;
+      }
+    }
+
+    a {
+      @include shadow-m(out);
+      padding: .8rem 1.1rem;
+      margin: 0 .25rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: $accent_font_color;
+      line-height: 1em;
+      border: none;
+      background: $point_bg_color;
+    }
+
+    &.active {
+      a,
+      a:hover,
+      a:focus {
+        background: $key_color;
+        color: $base_font_color;
+      }
+    }
+
+    &.disabled {
+      a,
+      a:hover,
+      a:focus {
+        color: $accent_font_color;
+        background: $point_bg_color;
+      }
+    }
+  }
+}

@@ -22,13 +22,21 @@
 
 @mixin shadow-m($inset) {
   @if $inset == 'in' {
-    box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: inset 0 .2rem .8rem rgba(0,0,0,0.1);
   }
   @else {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 .2rem .8rem rgba(0,0,0,0.1);
   }
 }
 
+@mixin shadow-l($inset) {
+  @if $inset == 'in' {
+    box-shadow: inset 0 .6rem 1.2rem rgba(0,0,0,0.1);
+  }
+  @else {
+    box-shadow: 0 .6rem 1.2rem rgba(0,0,0,0.1);
+  }
+}
 
 
 // @import "foundation/_reset";
@@ -43,7 +51,7 @@ body {
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   line-height: 1em;
   color: $base_font_color;
-  padding-top: 70px;
+  padding-top: 6rem;
 }
 .img-responsive {
   width: 100%;
@@ -67,10 +75,15 @@ body {
 //- ------------------------------------------------------
 
 @import "./object/component/_taglist";
-@import "./object/component/_pageheader";
+@import "./object/component/_page_header";
 @import "./object/component/_title";
 @import "./object/component/_label";
 @import "./object/component/_state";
+@import "./object/component/_pagination";
+@import "./object/component/_navbar_header";
+@import "./object/component/_navbar_toggle";
+@import "./object/component/_navbar_collapse";
+@import "./object/component/_navbar_form";
 
 .heading {
   margin: 0;
@@ -84,6 +97,8 @@ body {
 
 @import "./object/project/_tags";
 @import "./object/project/_panel";
+@import "./object/project/_panels";
+@import "./object/project/_navbar";
 
 
 //-

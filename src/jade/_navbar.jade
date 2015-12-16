@@ -1,42 +1,11 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-// Nav bar
+// Navbar
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 nav.navbar.navbar-fixed-top
+
   .container
-    .navbar-header
-      button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#globalmenu")
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      h1
-        a.text-hide.navbar-brand(href="/") LTShare
-
-    #globalmenu.collapse.navbar-collapse
-
-      form.navbar-form.navbar-left(role="search")
-        .form-group
-          input.form-control(type="text", placeholder="ライトニングトークを検索")
-        button.btn(type="submit")
-          span.sr-only 検索
-          i.fa.fa-search(aria-hidden="true")
-
-
-      p.navbar-text
-        a.navbar-link(href="#")
-          i.fa.fa-tags(aria-hidden="true")
-          | Tags
-
-      p.navbar-text
-        a.navbar-link(href="#")
-          i.fa.fa-upload(aria-hidden="true")
-          | Upload
-
-      p.navbar-text.navbar-right
-        a.navbar-link(href="#") Log Out
-
-      p.navbar-text.navbar-right
-        a.navbar-link(href="#") Log In
-
-      p.navbar-text.navbar-right
-        a.navbar-link(href="#") Sign Up
+    
+    include ./_navbar_haeder.jade
+    
+    include ./_navbar_collapse.jade
+    

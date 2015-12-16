@@ -1,0 +1,50 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Navbar header
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.navbar-header {
+  position: relative;
+
+  .navbar-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+  }
+
+  h1 {
+    margin: 0;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      padding: 0;
+      height: auto;
+
+      img {
+        width: 8.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $sm) {
+  .navbar-header {
+    background: $key_color;
+
+    h1 {
+      padding-right: 2rem;
+
+      a {
+        margin-left: 0!important;
+
+        img {
+          &:hover,
+          &:focus {
+            opacity: .8;
+          }
+        }
+      }
+    }
+  }
+}

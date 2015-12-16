@@ -1,0 +1,27 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Navbar
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.navbar {
+  @include shadow-l(out);
+  margin-bottom: 0;
+  border: none;
+
+  > .container {
+    background: $key_color;
+  }
+}
+
+@media (min-width: $sm) {
+  .navbar {
+    background: #FDD835;
+    background: -moz-linear-gradient(left,  #FDD835 0%, #FDD835 50%, #ffffff 50%, #ffffff 100%, #ffffff 100%);
+    background: -webkit-linear-gradient(left,  #FDD835 0%,#FDD835 50%,#ffffff 50%,#ffffff 100%,#ffffff 100%);
+    background: linear-gradient(to right,  #FDD835 0%,#FDD835 50%,#ffffff 50%,#ffffff 100%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDD835', endColorstr='#ffffff',GradientType=1 );
+
+    > .container {
+      background: white;
+      padding: 0;
+    }
+  }
+}
