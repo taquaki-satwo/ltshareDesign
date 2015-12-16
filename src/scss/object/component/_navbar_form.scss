@@ -1,0 +1,57 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Navbar form
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.navbar-form {
+
+  .form-group {
+    display: flex;
+  }
+
+  .form-control {
+    height: 3.6rem;
+    font-size: 1.4rem;
+    line-height: 1em;
+    color: $sub_font_color;
+    border-top: 1px solid $sub_bg_color;
+    border-right: none;
+    border-bottom: 1px solid $sub_bg_color;
+    border-left: 1px solid $sub_bg_color;
+    border-top-left-radius: 3.6rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3.6rem;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+
+    &::-webkit-input-placeholder {
+      color: $accent_font_color;
+      padding: .7rem 0;
+    }
+    &:-ms-input-placeholder {
+      color: $accent_font_color;
+      padding: .7rem 0;
+    }
+    &::-moz-placeholder {
+      color: $accent_font_color;
+      padding: .7rem 0;
+    }
+  }
+
+  .btn {
+    height: 3.6rem;
+    font-size: 1.4rem;
+    color: $sub_font_color;
+    padding: .6rem 1.4rem;
+    border-top: 1px solid $sub_bg_color;
+    border-right: 1px solid $sub_bg_color;
+    border-bottom: 1px solid $sub_bg_color;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 3.6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 3.6rem;
+    background: none;
+  }
+}
+
+@media (min-width: $sm) {
+}

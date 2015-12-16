@@ -1,11 +1,6 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-// Navbar
+// Navbar collapse
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-nav.navbar.navbar-fixed-top
-
-  .container
-    
-    include ./_navbar_haeder.jade
-    
-    include ./_navbar_collapse.jade
-    
+.navbar-collapse {
+  background: white;
+}

@@ -1,11 +1,14 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-// Navbar
+// Navbar toggle
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-nav.navbar.navbar-fixed-top
+.navbar-toggle {
+  margin: 0;
+  padding: .8rem .4rem;
+  border: none;
+  border-radius: 0;
+  float: none;
 
-  .container
-    
-    include ./_navbar_haeder.jade
-    
-    include ./_navbar_collapse.jade
-    
+  .icon-bar {
+    background: $base_font_color;
+  }
+}

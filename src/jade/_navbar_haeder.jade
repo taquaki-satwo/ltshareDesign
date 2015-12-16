@@ -1,11 +1,10 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-// Navbar
+// Navbar Header
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-nav.navbar.navbar-fixed-top
+.navbar-header
 
-  .container
-    
-    include ./_navbar_haeder.jade
-    
-    include ./_navbar_collapse.jade
-    
+  include ./_navbar_toggle.jade
+  
+  h1
+    a.text-hide.navbar-brand(href="/") LTShare
+      img.img-responsive(src="/img/logo_l.png")
