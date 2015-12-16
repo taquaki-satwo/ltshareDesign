@@ -2,6 +2,7 @@
 // Tags
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .tags {
+  @include shadow-l(in);
   background: $sub_bg_color;
   padding-top: 3rem;
   padding-bottom: 3rem;
