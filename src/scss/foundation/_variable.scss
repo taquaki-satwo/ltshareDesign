@@ -58,12 +58,15 @@ $accent_font_color: $gray500;
 // Size
 //- ------------------------------------------------------
 
-// Font size
-$root_font_size: 62.5%;
-$base_font_size: 1rem;
-$heading_font_size: $base_font_size * 1.4;
-
 // Screen size
 $sm: 768px;
 $md: 992px;
 $lg: 1200px;
+
+// Font size
+$root_font_size: 80%;
+@media (min-width: $sm) {
+  $root_font_size: 62.5%;
+}
+$base_font_size: 1rem;
+$heading_font_size: $base_font_size * 1.4;
