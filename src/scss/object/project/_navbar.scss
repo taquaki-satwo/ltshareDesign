@@ -19,9 +19,17 @@
     background: linear-gradient(to right,  #FDD835 0%,#FDD835 50%,#ffffff 50%,#ffffff 100%,#ffffff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDD835', endColorstr='#ffffff',GradientType=1 );
 
-    > .container {
+    .row {
       background: white;
-      padding: 0;
+      display: flex;
+
+      .navbar-header {
+        width: 25%;
+      }
+
+      .navbar-collapse {
+        width: 75%;
+      }
     }
   }
 }

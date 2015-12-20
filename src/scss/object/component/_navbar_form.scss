@@ -2,6 +2,9 @@
 // Navbar form
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .navbar-form {
+  margin: 2rem 0;
+  padding: 0;
+  border: none;
 
   .form-group {
     display: flex;
@@ -21,6 +24,7 @@
     border-bottom-left-radius: 3.6rem;
     border-bottom-right-radius: 0;
     box-shadow: none;
+    background-color: white;
 
     &::-webkit-input-placeholder {
       color: $accent_font_color;
@@ -49,9 +53,52 @@
     border-top-right-radius: 3.6rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 3.6rem;
-    background: none;
+    background-color: white;
   }
 }
 
 @media (min-width: $sm) {
+  .navbar-form {
+    margin: 0;
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+
+    .form-group {
+      width: 100%;
+      max-width: 500px;
+      margin: 0;
+      padding: 0 1.5rem;
+    }
+
+    .form-control {
+      height: 2.5rem;
+      font-size: 1.2rem;
+      border-top-left-radius: 2.5rem;
+      border-bottom-left-radius: 2.5rem;
+      width: 100%;
+
+      &::-webkit-input-placeholder {
+        color: $accent_font_color;
+        padding: .6rem 0;
+      }
+      &:-ms-input-placeholder {
+        color: $accent_font_color;
+        padding: .6rem 0;
+      }
+      &::-moz-placeholder {
+        color: $accent_font_color;
+        padding: .6rem 0;
+      }
+    }
+
+    .btn {
+      height: 2.5rem;
+      font-size: 1.2rem;
+      padding: .3rem 1rem;
+      border-top-right-radius: 2.5rem;
+      border-bottom-right-radius: 2.5rem;
+    }
+  }
 }
