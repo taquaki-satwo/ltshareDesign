@@ -1,0 +1,48 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Navbar text
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.navbar-text {
+  font-size: 1.4rem;
+  margin: 0 0 1em;
+  line-height: 1em;
+  border-top: 1px solid $sub_bg_color;
+  padding: 1em 0 0;
+  height: auto;
+
+  a {
+    display: inline-block;
+    color: $accent_font_color;
+  }
+}
+
+.navbar-text.navbar-right {
+  a {
+    color: $base_font_color;
+  }
+
+  &.signup {
+    a {
+      color: $key_color;
+    }
+  }
+}
+
+@media (min-width: $sm) {
+  .navbar-texts {
+
+    .navbar-text {
+      font-size: 1.2rem;
+      margin: 0 1.5rem 0!important;
+      padding: 0;
+      border-top: none;
+
+      &:first-child {
+        margin-left: 0!important;
+      }
+
+      &:last-child {
+        margin-right: 0!important;
+      }
+    }
+  }
+}
