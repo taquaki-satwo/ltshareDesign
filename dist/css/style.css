@@ -82,7 +82,7 @@ body {
   margin: 0; }
 
 .title, .title-panel, .title-view {
-  padding: 2rem; }
+  padding: 1rem; }
   .title h1, .title-panel h1, .title-view h1 {
     font-size: 1.4rem;
     line-height: 1em;
@@ -378,7 +378,7 @@ body {
     top: 0;
     right: 0; }
   .panel-footer {
-    padding: 2rem;
+    padding: 1rem;
     background: white;
     border: none;
     border-radius: 0; }
