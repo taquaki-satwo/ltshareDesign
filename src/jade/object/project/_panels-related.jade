@@ -1,14 +1,20 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-// Tags
+// Related LT
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-.container-fluid.tags
+.container-fluid.panels
 
   .container
-  
+
+    include ../component/_pageheader
+
+      h2.heading 関連するライトニングトーク
+
     .row
 
-      h2.heading
-        i.fa.fa-tags(aria-hidden="true")
-        | Tags
+      include ./_panel
 
-      include ./_taglist-tags
+      include ./_panel
+
+      include ./_panel
+
+      include ./_panel

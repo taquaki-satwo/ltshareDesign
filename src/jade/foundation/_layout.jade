@@ -13,23 +13,23 @@ html(lang="ja")
     // Styles
     //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     link(rel="stylesheet", href="lib/bootstrap.min.css")
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/style.css")
 
     // [if lt IE 9]
-    script(src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
-    script(src="//oss.maxcdn.com/respond/1.4.2/respond.min.js")
+    script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+    script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
     // [endif]
 
   body
 
-    include ./_navbar
+    include ../object/project/_navbar
 
     block content
 
-    include ./_tags
+    include ../object/project/_tags
 
-    include ./_footer
+    include ../layout/_footer
 
 
     //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
