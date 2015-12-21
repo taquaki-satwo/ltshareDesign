@@ -3,68 +3,17 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 @import "./foundation/_variable";
-
-// @import "foundation/_mixin";
-@mixin ellipsis {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-@mixin inlineblock {
-  letter-spacing: -.5em;
-
-  > * {
-    letter-spacing: normal;
-  }
-}
-
-@mixin shadow-m($inset) {
-  @if $inset == 'in' {
-    box-shadow: inset 0 .2rem .8rem rgba(0,0,0,0.1);
-  }
-  @else {
-    box-shadow: 0 .2rem .8rem rgba(0,0,0,0.1);
-  }
-}
-
-@mixin shadow-l($inset) {
-  @if $inset == 'in' {
-    box-shadow: inset 0 .6rem 1.2rem rgba(0,0,0,0.1);
-  }
-  @else {
-    box-shadow: 0 .6rem 1.2rem rgba(0,0,0,0.1);
-  }
-}
-
-
+@import "foundation/_mixin";
 // @import "foundation/_reset";
+@import "foundation/_base";
 
-// @import "foundation/_base";
-html {
-  font-size: $root_font_size;
-}
-body {
-  background: $base_bg_color;
-  font-size: $base_font_size;
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  line-height: 1em;
-  color: $base_font_color;
-  padding-top: 6rem;
-}
-.img-responsive {
-  width: 100%;
-}
 
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 // Layout
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 @import "./layout/_footer";
-// @import "layout/_header";
-// @import "layout/_main";
-// @import "layout/_sidebar";
+
 
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 // Object
@@ -75,7 +24,7 @@ body {
 //- ------------------------------------------------------
 
 @import "./object/component/_taglist";
-@import "./object/component/_page_header";
+@import "./object/component/_pageheader";
 @import "./object/component/_title";
 @import "./object/component/_label";
 @import "./object/component/_state";
@@ -85,12 +34,9 @@ body {
 @import "./object/component/_navbar_collapse";
 @import "./object/component/_navbar_form";
 @import "./object/component/_navbar_text";
+@import "./object/component/_heading";
 
-.heading {
-  margin: 0;
-  font-size: $heading_font_size;
-  line-height: 1em;
-}
+
 
 //-
 // Project

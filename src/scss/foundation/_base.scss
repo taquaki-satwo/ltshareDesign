@@ -1,0 +1,17 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Base
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+html {
+  font-size: $root_font_size;
+}
+body {
+  background: $base_bg_color;
+  font-size: $base_font_size;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  line-height: 1em;
+  color: $base_font_color;
+  padding-top: 6rem;
+}
+.img-responsive {
+  width: 100%;
+}
