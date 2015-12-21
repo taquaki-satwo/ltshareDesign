@@ -1,0 +1,47 @@
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+// Mixin
+//- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//-
+// Text
+//- ------------------------------------------------------
+@mixin ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+//-
+// Layout
+//- ------------------------------------------------------
+@mixin inlineblock {
+  letter-spacing: -.5em;
+
+  > * {
+    letter-spacing: normal;
+  }
+}
+
+
+//-
+// Decoration
+//- ------------------------------------------------------
+@mixin shadow-m($inset) {
+  @if $inset == 'in' {
+    box-shadow: inset 0 .2rem .8rem rgba(0,0,0,0.1);
+  }
+  @else {
+    box-shadow: 0 .2rem .8rem rgba(0,0,0,0.1);
+  }
+}
+
+@mixin shadow-l($inset) {
+  @if $inset == 'in' {
+    box-shadow: inset 0 .6rem 1.2rem rgba(0,0,0,0.1);
+  }
+  @else {
+    box-shadow: 0 .6rem 1.2rem rgba(0,0,0,0.1);
+  }
+}

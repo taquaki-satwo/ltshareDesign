@@ -1,10 +1,8 @@
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-// Navbar Header
+// Heading
 //- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-.navbar-header
-
-  include ./_navbar_toggle.jade
-  
-  h1
-    a.text-hide.navbar-brand(href="/") LTShare
-      img.img-responsive(src="/img/logo_l.png")
+.heading {
+  margin: 0;
+  font-size: $heading_font_size;
+  line-height: 1em;
+}
